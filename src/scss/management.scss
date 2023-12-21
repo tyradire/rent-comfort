@@ -1,0 +1,32 @@
+.management {
+  padding-top: 140px;
+  padding-bottom: 140px;
+
+  &-title {
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 0;
+  }
+  &-description {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 16px;
+  }
+
+  .point-list {
+    &-item {
+      background-color: #f2f0f2;
+
+      &-subtitle {
+        height: 64px;
+      }
+    }
+  }
+}

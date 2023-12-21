@@ -1,0 +1,42 @@
+.call {
+  width: 100%;
+  height: 506px;
+  margin-top: 140px;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.00) 100%), url('../images/space-background.webp'), lightgray 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+
+  &-title {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    margin: 0;
+    margin-top: 16px;
+  }
+  &-description {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0;
+    margin-top: 24px;
+    color: #ffffff;
+  }
+
+  .button {
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+    }
+  }
+}
+
+.call .container {
+  padding-top: 140px;
+}
+.call .button {
+  margin-top: 60px;
+}

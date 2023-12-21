@@ -1,0 +1,77 @@
+.footer {
+  padding-top: 140px;
+  padding-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  &-logo {
+    display: flex;
+  }
+  &-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &-soc-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+
+    &-item {
+      margin-left: 12px;
+
+      &:first-of-type {
+        margin-left: 0;
+      }
+    }
+  }
+  &-number {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    margin-top: 28px;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+  .logo {
+    margin-left: -20px;
+  }
+  .navigate {
+    display: flex;
+    gap: 60px;
+  }
+  .navigate-list {
+    flex-direction: column;
+  }
+  .navigate-list-item {
+    margin-top: 16px;
+    max-width: 190px;
+  }
+  .navigate-list p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+  }
+  
+  .form {
+    max-width: 394px;
+    width: 100%;
+  }
+  .form-description {
+    margin-top: 8px;
+  }
+  .form-input {
+    margin-top: 20px;
+  }
+  .form-submit {
+    margin-top: 20px;
+  }
+}

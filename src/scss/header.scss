@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 12px 0;
+
+  &-logo {
+    display: flex;
+  }
+
+  .navigate-list-item {
+    margin-left: 40px;
+    font-weight: 600;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@@include('parts/head.html')
+
+<div class="container">
+    @@include('parts/header.html')
+</div>
+@@include('parts/404.html')
+<div class="container">
+    @@include('parts/footer.html')
+</div>
+@@include('parts/ending.html')

@@ -1,0 +1,78 @@
+.reviews {
+  padding-top: 140px;
+  padding-bottom: 120px;
+
+  &-title {
+    text-align: center;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    max-width: 847px;
+    margin: 0 auto;
+  }
+  &-description {
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 847px;
+    margin-top: 24px;
+  }
+
+  &-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    margin-top: 60px;
+    padding: 0;
+  }
+  &-list-item {
+    width: 847px;
+    min-width: 847px;
+    max-width: 847px;
+    padding: 60px;
+    border-radius: 60px 60px 60px 12px;
+    background-color: #F2F0F2;
+
+    &-person {
+      display: flex;
+      flex-direction: row;
+    }
+    &-author {
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+    }
+    &-name {
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin: 0;
+    }
+    &-description {
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      margin: 0;
+    }
+    &-text {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0;
+      margin-top: 20px;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<section class="hero">
+  <div class="hero-offer">
+    <h2 class="hero-title">
+      Сдаем в аренду вашу недвижимость
+    </h2>
+    <p class="hero-description">
+      Вам больше не нужно обзванивать сотни агентств недвижимости, 
+      и самостоятельно размещать объявление на  сайтах по аренде жилья.
+    </p>
+  </div>
+  <form class="form horizontal">
+    <select class="form-select-city form-select-city-placeholder" name="state" id="main-form-search-input">
+      <option></option>
+      <option value="MSC">Москва</option>
+      <option value="SPB">Санкт-Петербург</option>
+      <option value="NSK">Новосибирск</option>
+      <option value="EKB">Екатеринбург</option>
+      <option value="KAZ">Казань</option>
+      <option value="NNG">Нижний Новгород</option>
+      <option value="CHL">Челябинск</option>
+      <option value="SAM">Самара</option>
+      <option value="UFA">Уфа</option>
+      <option value="RND">Ростов-на-Дону</option>
+      <option value="OMS">Омск</option>
+      <option value="KRK">Красноярск</option>
+      <option value="VRN">Воронеж</option>
+      <option value="PER">Пермь</option>
+      <option value="VGD">Волгоград</option>
+      <option value="KRD">Краснодар</option>
+      <option value="TUM">Тюмень</option>
+      <option value="SAR">Саратов</option>
+    </select>
+    <div class="form-split">
+      <input type="text" class="form-select-date" id="main-form-datepicker-in" placeholder="Move-in">
+      <img class="form-arrow" src="../images/link-arrow-icon.svg">
+      <input type="text" class="form-select-date" id="main-form-datepicker-out" placeholder="Move-out">  
+    </div>
+    <div class="form-split">
+      <p class="form-point">Guests</p>
+      <button class="form-counter-button" id="search-form-counter-minus">
+        <img src="../images/minus-icon.svg">
+      </button>
+      <input type="text" class="form-counter" value="1" id="main-search-form-counter" readonly>
+      <button class="form-counter-button" id="search-form-counter-plus">
+        <img src="../images/plus-icon.svg">
+      </button>
+    </div>
+    <input type="submit" class="button" value="Поиск">
+  </form>
+</section>

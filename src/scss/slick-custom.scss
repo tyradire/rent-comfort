@@ -1,0 +1,40 @@
+.reviews-list .slick-prev,
+.reviews-list .slick-next {
+  cursor: pointer;
+  position: absolute;
+  bottom: -120px;
+  font-size: 0;
+  background-color: #064749;
+  border: 1px solid transparent;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  transition: all .4s;
+}
+.reviews-list .slick-prev {
+  left: calc(50% - 80px);
+  background-image: url('../images/arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+}
+.reviews-list .slick-next {
+  left: calc(50% + 20px);
+  background-image: url('../images/arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px;
+  transform: rotateZ(180deg);
+}
+
+.reviews-list .slick-prev:hover,
+.reviews-list .slick-next:hover {
+  opacity: .7;
+}
+.reviews-list .slick-slide {
+  margin: 0 30px;
+}
+.blog-list .slick-slide {
+  margin: 0 10px;
+}

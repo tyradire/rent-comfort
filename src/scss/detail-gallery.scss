@@ -1,0 +1,40 @@
+.detail-gallery {
+
+  &-wrapper {
+    display: grid;
+    list-style: none;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 480px;
+  }
+  &-item {
+    overflow: hidden;
+  }
+  &-image {
+    width: 235px;
+    height: 235px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  &-item:first-of-type {
+    position: relative;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    img {
+      width: 958px;
+      height: 480px;
+    }
+    .button {
+      position: absolute;
+      bottom: 20px;
+      left: 80px;
+    }
+  }
+}
