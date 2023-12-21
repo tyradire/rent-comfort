@@ -24,6 +24,7 @@ gulpfile.js
 .env.production.local
 
 #other
+/schemes
 .txt
 
 npm-debug.log*
