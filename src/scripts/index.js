@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       $("#main-search-form-counter").val(parseInt($("#main-search-form-counter").val())+1);
       searchFormCounter = $("#main-search-form-counter").val();
-   })
+   });
    $("#search-form-counter-minus").on("click", function(e) {
       e.preventDefault();
       $("#search-form-counter-plus").prop("disabled", false);
@@ -117,5 +117,5 @@ document.addEventListener("DOMContentLoaded", () => {
       }
       $("#main-search-form-counter").val(parseInt($("#main-search-form-counter").val())-1);
       searchFormCounter = $("#main-search-form-counter").val();
-   })
+   });
 });

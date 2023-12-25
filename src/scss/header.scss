@@ -7,7 +7,13 @@
   padding: 12px 0;
 
   &-logo {
+    text-decoration: none;
     display: flex;
+
+    &:hover {
+      cursor: pointer;
+      opacity: .85;
+    }
   }
 
   .navigate-list-item {
