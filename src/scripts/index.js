@@ -36,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
    // Липкий хедер
    $(window).scroll(function() {
       if ($(window).scrollTop() > 200 || $(window).scrollTop() == 0) {
-         console.log(123)
           $('.header').css({
             'position': 'sticky',
             'opacity': '1',
@@ -134,4 +133,17 @@ document.addEventListener("DOMContentLoaded", () => {
       $("#main-search-form-counter").val(parseInt($("#main-search-form-counter").val())-1);
       searchFormCounter = $("#main-search-form-counter").val();
    });
+
+   // Поиск с главной
+   $('#main-search-form').on('submit', function(event) {
+      event.preventDefault();
+      window.location.pathname = '/arenda.html';
+      let formData = {
+         city: $('#main-form-search-input').val(),
+         dateIn: $('#main-form-datepicker-in').val(),
+         dateOut: $('#main-form-datepicker-out').val(),
+         guests: $('#main-search-form-counter').val()
+      };
+      localStorage.setItem('searchFormData', JSON.stringify(formData));
+   })
 });

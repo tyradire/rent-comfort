@@ -46,7 +46,14 @@ $('.apartments-list-item').each(function(index) {
 if (window.location.pathname == '/detail.html') {
   let currentId = Number(localStorage.getItem('currentApartments'));
   let currentApartments = apartmentsList.find(apartments => apartments.id === currentId)
-  console.log(currentApartments);
   $('.detail-booking-title').text('Апартаменты на ' + currentApartments.address)
   $('.detail-booking-city').text(currentApartments.city)
+}
+
+if (window.location.pathname == '/arenda.html') {
+  let searchFormData = JSON.parse(localStorage.getItem('searchFormData'));
+  $('#main-form-search-input').val(searchFormData.city);
+  $('#main-form-datepicker-in').val(searchFormData.dateIn);
+  $('#main-form-datepicker-out').val(searchFormData.dateOut);
+  $('#main-search-form-counter').val(searchFormData.guests);
 }
