@@ -1,9 +1,11 @@
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #FFFFFF;
   width: 100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
   padding: 12px 0;
 
   &-logo {
@@ -24,4 +26,11 @@
       margin-left: 0;
     }
   }
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
 }
