@@ -33,21 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).next().slideToggle("fast");
    })
 
-   // Липкий хедер
-   $(window).scroll(function() {
-      if ($(window).scrollTop() > 200 || $(window).scrollTop() == 0) {
-          $('.header').css({
-            'position': 'sticky',
-            'opacity': '1',
-         });
-      } else {
-          $('.header').css({
-            'position': '',
-            'opacity': '0',
-         });
-      }
-   });
-
    // Главный слайдер Блога
    $('.blog-hero-list').slick({
       infinite: true,

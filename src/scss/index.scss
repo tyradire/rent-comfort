@@ -22,6 +22,12 @@ body {
   max-width: 1300px;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 .form-wrapper {
   max-width: 1064px;

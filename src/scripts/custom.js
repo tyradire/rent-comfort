@@ -1,5 +1,25 @@
 // dev settings
 let isDev = window.location.hostname == 'localhost';
+let isDesktop = window.outerWidth >= 768;
+let lastScrollTop = 0;
+
+// Липкий хедер
+if (isDesktop) {
+  $(window).scroll(function(event){
+    let st = $(this).scrollTop();
+    if (st > lastScrollTop){
+     $('.header').css({
+       'opacity': '0',
+     });
+    } else {
+       $('.header').css({
+         'position': 'fixed',
+         'opacity': '1',
+       });
+    }
+    lastScrollTop = st;
+ });
+}
 
 // Фикс паддинга скролла страниц, которые умещаются на экране
 if ($(document).height() <= $(window).height()) {
