@@ -98,3 +98,10 @@
   border-radius: 20px;
   border: 1px solid #ffffff;
 }
+
+@media (max-width: 500px) {
+  .form.horizontal .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

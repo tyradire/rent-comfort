@@ -72,6 +72,14 @@
   .hero-offer {
     padding: 32px;
   }
+  .hero .form {
+    height: 52px;
+  }
+  .form.horizontal .button {
+    font-size: 16px;
+    line-height: 1;
+    border-radius: 24px;
+  }
 }
 @media (max-width: 500px) {
   .hero {
