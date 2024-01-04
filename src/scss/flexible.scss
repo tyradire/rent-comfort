@@ -11,6 +11,9 @@
     min-width: 640px;
     height: auto;
   }
+  &-image {
+    background-color: #f2f0f2;
+  }
   &-text {
     padding: 120px 80px;
     border-radius: 0px 60px 60px 0px;
@@ -30,5 +33,38 @@
     line-height: 20px;
     margin: 0;
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .flexible {
+    flex-direction: column;
+    padding-top: 80px;
+  }
+  .flexible-images {
+    width: 100%;
+    min-width: 100%;
+  }
+  .flexible-image {
+    max-width: 50%;
+    height: 160px;
+    object-fit: cover;
+
+    &:nth-child(1) {
+      border-radius: 20px 0px 0px 0px;
+    }
+    &:nth-child(2) {
+      border-radius: 0 20px 0px 0px;
+    }
+    &:nth-child(3) {
+      border-radius: 0;
+    }
+    &:nth-child(4) {
+      border-radius: 0;
+    }
+  }
+  .flexible-text {
+    padding: 32px;
+    border-radius: 0px 0px 20px 20px;
   }
 }

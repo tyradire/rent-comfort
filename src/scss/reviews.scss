@@ -76,3 +76,22 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .reviews {
+    padding-top: 80px;
+    padding-bottom: 0;
+  }
+  .reviews-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reviews-list-item {
+    width: calc(100% - 32px);
+    min-width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
+    padding: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}

@@ -61,3 +61,15 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .partnership {
+    padding-top: 60px;
+  }
+  .partnership-list {
+    flex-direction: column;
+  }
+  .partnership-list-item {
+    width: 100%;
+  }
+}

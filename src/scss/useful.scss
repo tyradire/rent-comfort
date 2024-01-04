@@ -39,3 +39,14 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .useful {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .useful-list {
+    display: flex;
+    flex-direction: column;
+  }
+}

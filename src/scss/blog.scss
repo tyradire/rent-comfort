@@ -77,3 +77,25 @@
 .blog .button {
   margin: 0 auto;
 }
+
+@media (max-width: 767px) {
+  .blog {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-list {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog-list-item,
+  .blog-list-item-image {
+    width: 343px;
+  }
+  .blog-list-item-image {
+    height: 200px;
+    object-fit: cover;
+  }
+}

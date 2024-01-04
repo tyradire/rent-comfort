@@ -40,3 +40,9 @@
 .call .button {
   margin-top: 60px;
 }
+
+@media (max-width: 767px) {
+  .call {
+    margin-top: 60px;
+  }
+}

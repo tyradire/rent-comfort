@@ -64,3 +64,17 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .hero {
+    padding-top: 80px;
+  }
+  .hero-offer {
+    padding: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    background-position: -480px 240px;
+  }
+}

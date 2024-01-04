@@ -3,6 +3,12 @@ document.addEventListener("DOMContentLoaded", () => {
       infinite: true,
       centerMode: true,
       variableWidth: true,
+      responsive: [
+         {
+             breakpoint: 500,
+             settings: "unslick"
+         }
+     ]
    });
 
    $('#blog-slider').slick({
@@ -11,6 +17,10 @@ document.addEventListener("DOMContentLoaded", () => {
       centerMode: true,
       variableWidth: true,
       slidesToScroll: 3,
+      responsive: [{
+        breakpoint: 500,
+        settings: "unslick"
+      }]
    });
    $('#blog-page-slider').slick({
       arrows: false,

@@ -1,0 +1,25 @@
+@media (max-width: 767px) {
+  .hero-title,
+  .location-title,
+  .partnership-title,
+  .city-select-title,
+  .call-title,
+  .reviews-title,
+  .blog-title,
+  .useful-title,
+  .advantages-title {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 46px;
+  }
+  .hero-description,
+  .call-description,
+  .city-select-description,
+  .reviews-description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
