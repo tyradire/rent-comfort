@@ -40,6 +40,10 @@
   display: flex;
   flex-direction: column;
 
+  &-wrapper {
+    margin-top: 102px;
+  }
+
   h1 {
     text-align: center;
     font-size: 52px;
@@ -380,13 +384,18 @@
   line-height: 20px;
 }
 
+@media (max-width: 1400px) {
+
+}
+
 @media (max-width: 767px) {
   .point-list {
     flex-direction: column;
   }
   .point-list-item {
     width: 100%;
-    align-items: center;
+    padding: 32px;
+    align-items: flex-start;
   }
   .form.horizontal {
     left: 24px;
@@ -394,6 +403,42 @@
     .form-split {
       display: none;
     }
+  }
+  .form-wrapper {
+    .form.horizontal {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .hidden-list-item-question {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hidden-list-item-answer {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .line {
+    margin-left: 16px;
+  }
+
+  .vertical-list-item:nth-child(even),
+  .vertical-list-item:nth-child(odd) {
+    padding-left: 36px;
+  }
+  .vertical-list-item:nth-child(odd) {
+    right: initial;
+    padding-right: 0;
+    align-items: flex-start;
+  }
+  .vertical-list-item::after {
+    right: initial;
+    left: -10px;
+  }
+  .vertical-list-item:nth-child(odd) .vertical-list-item-description {
+    text-align: start;
   }
 }
 

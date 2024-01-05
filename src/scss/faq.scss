@@ -11,3 +11,10 @@
     margin: 0;
   }
 }
+
+@media (max-width: 767px) {
+  .faq {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+}

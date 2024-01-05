@@ -110,3 +110,30 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .pricing {
+    padding-top: 60px;
+  }
+  .pricing-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .pricing-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .pricing-card-main {
+    padding: 32px;
+  }
+  .pricing-card-main-fee {
+    height: 80px;
+    font-size: 40px;
+    line-height: 46px;
+    margin-top: 0;
+  }
+  .pricing-card-main-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

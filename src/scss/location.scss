@@ -81,3 +81,12 @@
     object-fit: cover;
   }
 }
+
+@media (max-width: 500px) {
+  .location-list-item {
+    height: initial;
+  }
+  .location-list-item-name {
+    height: initial;
+  }
+}

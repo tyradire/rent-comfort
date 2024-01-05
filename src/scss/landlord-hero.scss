@@ -98,3 +98,34 @@ span[aria-owns='select-form-rooms-menu'] {
 .landlord-hero .ui-button {
   border: none;
 }
+
+@media (max-width: 767px) {
+  .landlord-hero {
+    height: 918px;
+    background-position: -280px center;
+  }
+  .landlord-hero .container {
+    justify-content: center;
+  }
+  .landlord-hero .form.light {
+    margin-top: 60px;
+  }
+  .landlord-hero .form.light .form-split {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .landlord-hero .form-title {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .landlord-hero .form-description {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .landlord-hero .form.light {
+    margin-top: 80px;
+  }
+}
