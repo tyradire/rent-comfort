@@ -7,15 +7,14 @@ let lastScrollTop = 0;
 if (isDesktop) {
   $(window).scroll(function(event){
     let st = $(this).scrollTop();
-    if (st > lastScrollTop){
-     $('.header').css({
-       'opacity': '0',
-     });
+    if (st < lastScrollTop || lastScrollTop == 0){
+      $('.header').css({
+        'opacity': '1',
+      });
     } else {
-       $('.header').css({
-         'position': 'fixed',
-         'opacity': '1',
-       });
+      $('.header').css({
+        'opacity': '0',
+      });
     }
     lastScrollTop = st;
  });
