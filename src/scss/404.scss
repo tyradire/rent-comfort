@@ -1,5 +1,6 @@
 .page-not-found {
   min-height: calc(100vh - 498px);
+  margin-top: 92px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,5 +38,20 @@
       color: #181a18;
       border-color: #181a18;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-not-found h1 {
+    font-size: 128px;
+    line-height: 84px;
+  }
+  .page-not-found h1 span {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .page-not-found-back {
+    font-size: 20px;
+    line-height: 22px;
   }
 }

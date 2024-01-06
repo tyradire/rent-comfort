@@ -27,6 +27,16 @@ document.addEventListener("DOMContentLoaded", () => {
       infinite: true,
       centerMode: true,
       variableWidth: true,
+      responsive: [{
+        breakpoint: 500,
+        settings: "unslick"
+      }]
+   });
+   // Главный слайдер Блога
+   $('.blog-hero-list').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
    });
 
    // Инициализация формы выбора города
@@ -42,13 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).toggleClass("opened");
       $(this).next().slideToggle("fast");
    })
-
-   // Главный слайдер Блога
-   $('.blog-hero-list').slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
-   });
 
    // Дейтпикер формы поиска на главной
    $( "#main-form-datepicker-in" ).datepicker({
