@@ -90,6 +90,12 @@ document.addEventListener("DOMContentLoaded", () => {
    $( "#detail-form-datepicker-out" ).datepicker({
       numberOfMonths: 2
    });
+   $( "#order-form-datepicker-in" ).datepicker({
+      numberOfMonths: 2
+   });
+   $( "#order-form-datepicker-out" ).datepicker({
+      numberOfMonths: 2
+   });
 
    // Селект с поиском у формы поиска на главной
    $("#main-form-search-input").select2({
@@ -143,5 +149,48 @@ document.addEventListener("DOMContentLoaded", () => {
          guests: $('#main-search-form-counter').val()
       };
       localStorage.setItem('searchFormData', JSON.stringify(formData));
+   })
+
+   // Телефонный инпут страницы заказа
+   let orderPhoneInput = document.querySelector("#order-phone");
+   window.intlTelInput(orderPhoneInput, {
+      initialCountry: "auto",
+      geoIpLookup: callback => {
+         fetch("https://ipapi.co/json")
+            .then(res => res.json())
+            .then(data => callback(data.country_code))
+            .catch(() => callback("us"));
+      },
+      utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
+   });
+   $('#order-phone').mask('(999)-999-99-99');
+
+   // Форма заказа
+   $('#another-person-checkbox').on('change', function() {
+      if ($(this).is(':checked')) {
+         $('.order-another-person').css('display', 'flex')
+      } else $('.order-another-person').css('display', 'none')
+   })
+
+   $('.order-radio-buttons div input').on('change', function() {
+      let purpose = $(this).val();
+      switch(purpose) {
+         case 'business':
+            $('.order-input-additional').css("display", "block")
+            $('.input-textarea').css("display", "none")
+            break;
+         case 'moving':
+            $('.order-input-additional').css("display", "none")
+            $('.input-textarea').css("display", "none")
+            break;
+         case 'holiday':
+            $('.order-input-additional').css("display", "none")
+            $('.input-textarea').css("display", "none")
+            break;
+         case 'other':
+            $('.order-input-additional').css("display", "none")
+            $('.input-textarea').css("display", "block")
+            break;
+      }
    })
 });

@@ -1,0 +1,53 @@
+<section class="order">
+  <form class="form form-order">
+    <h2 class="order-title">Детальная информация</h2>
+    <input type="text" class="input" placeholder="Имя">
+    <input type="text" class="input" placeholder="Фамилия">
+    <input type="email" class="input" placeholder="Email">
+    <input type="tel" class="input" id="order-phone" placeholder="Номер телефона">
+    <div class="order-radio-buttons">
+      <h3>Цель пребывания</h3>
+      <div>
+        <input type="radio" name="order-radio" id="order-radio-business" value="business" checked>
+        <label for="order-radio-business">Деловая поездка/Работа</label>
+      </div>
+      <div>
+        <input type="radio" name="order-radio" id="order-radio-moving" value="moving">
+        <label for="order-radio-moving">Переезд в город/страну</label>
+      </div>
+      <div>
+        <input type="radio" name="order-radio" id="order-radio-holiday" value="holiday">
+        <label for="order-radio-holiday">Праздничная поездка</label>
+      </div>
+      <div>
+        <input type="radio" name="order-radio" id="order-radio-other" value="other">
+        <label for="order-radio-other">Другое</label>
+      </div>
+      <input type="text" placeholder="Организация" class="input order-input-additional">
+      <textarea class="input input-textarea" placeholder="Введите дополнительную информацию"></textarea>
+    </div>
+    <div class="order-checkbox-booking">
+      <input type="checkbox" class="" id="another-person-checkbox">
+      <label for="another-person-checkbox">Я бронирую от имени другого человека</label>
+    </div>
+    <div class="order-another-person">
+      <input type="text" class="input" placeholder="Имя">
+      <input type="text" class="input" placeholder="Email гостя">
+    </div>
+  </form>
+  <div class="order-information">
+    <img class="order-information-image" src="../images/gallery-photo-1.webp">
+    <form class="form order-form">
+      <div class="form-split">
+        <div class="form-column">
+          <label for="detail-form-datepicker-in">Заезд</label>
+          <input type="button" class="form-select-date" id="order-form-datepicker-in" value="Выбрать">
+        </div>
+        <div class="form-column">
+          <label for="detail-form-datepicker-out">Выезд</label>
+          <input type="button" class="form-select-date" id="order-form-datepicker-out" value="Выбрать">
+        </div>
+      </div>
+    </form>
+  </div>
+</section>

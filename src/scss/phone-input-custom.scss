@@ -1,0 +1,22 @@
+.iti--allow-dropdown input, 
+.iti--allow-dropdown input[type=text], 
+.iti--allow-dropdown input[type=tel], 
+.iti--separate-dial-code input, 
+.iti--separate-dial-code input[type=text], 
+.iti--separate-dial-code input[type=tel] {
+  width: 100%;
+}
+
+.iti__arrow {
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid #49735A;
+  border-radius: 4px;
+}
+.iti__arrow--up {
+  border-bottom: 0;
+}
+
+.iti__selected-flag {
+  padding-left: 32px;
+}
