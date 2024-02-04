@@ -58,8 +58,12 @@ document.addEventListener("DOMContentLoaded", () => {
       numberOfMonths: 2
    });
    $( "#main-form-datepicker-out" ).datepicker({
-      numberOfMonths: 2
+      numberOfMonths: 2,
+
    });
+   var date = new Date()
+   date.setDate(date.getDate() + parseInt($('#main-form-datepicker-in').val(), 10))
+   $('#main-form-datepicker-out').datepicker('option', {minDate: date})
    jQuery(function ($) {
       $.datepicker.regional['ru'] = {
           closeText: 'Закрыть',
