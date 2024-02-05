@@ -8,7 +8,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 1',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: [3]
     },
     {
       id: 2,
@@ -18,7 +19,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 2',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 3,
@@ -28,7 +30,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 3',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [5]
     },
     {
       id: 4,
@@ -38,7 +41,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 4',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 5,
@@ -48,7 +52,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 5',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 6,
@@ -58,7 +63,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 6',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [2]
     },
     {
       id: 7,
@@ -68,7 +74,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 7',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 8,
@@ -78,7 +85,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 8',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 9,
@@ -88,7 +96,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 9',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: [1]
     },
     {
       id: 10,
@@ -98,7 +107,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 10',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 11,
@@ -108,7 +118,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 11',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [8]
     },
     {
       id: 12,
@@ -118,7 +129,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 12',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [4]
     },
     {
       id: 13,
@@ -128,7 +140,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 13',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 14,
@@ -138,7 +151,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 14',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 15,
@@ -148,7 +162,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 15',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 16,
@@ -158,7 +173,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 16',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 17,
@@ -168,7 +184,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 17',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 18,
@@ -178,7 +195,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 18',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
 
     // SPB
@@ -190,7 +208,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 19',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 20,
@@ -200,7 +219,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 20',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [4]
     },
     {
       id: 21,
@@ -210,7 +230,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 21',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 22,
@@ -220,7 +241,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 22',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 23,
@@ -230,7 +252,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 23',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 24,
@@ -240,7 +263,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 24',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 25,
@@ -250,7 +274,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 25',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: [2]
     },
     {
       id: 26,
@@ -260,7 +285,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 26',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 27,
@@ -270,7 +296,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 27',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 28,
@@ -280,7 +307,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 28',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 29,
@@ -290,7 +318,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 29',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 30,
@@ -300,7 +329,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 31',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 31,
@@ -310,7 +340,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 32',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
 
     {
@@ -321,7 +352,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 33',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [3]
     },
     {
       id: 33,
@@ -331,7 +363,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 34',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 34,
@@ -341,7 +374,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 35',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 35,
@@ -351,7 +385,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 36',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 36,
@@ -361,7 +396,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 37',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [9]
     },
     {
       id: 37,
@@ -371,7 +407,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 38',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
 
     {
@@ -382,7 +419,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 39',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 39,
@@ -392,7 +430,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 40',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [4]
     },
     {
       id: 40,
@@ -402,7 +441,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 41',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 41,
@@ -412,7 +452,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 42',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 42,
@@ -422,7 +463,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 43',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 43,
@@ -432,7 +474,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 44',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [1]
     },
     {
       id: 44,
@@ -442,7 +485,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 45',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
 
     {
@@ -453,7 +497,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 46',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 46,
@@ -463,7 +508,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 47',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [8]
     },
     {
       id: 47,
@@ -473,7 +519,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 48',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 48,
@@ -483,7 +530,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 49',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [3]
     },
     {
       id: 49,
@@ -493,7 +541,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 50',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 50,
@@ -503,7 +552,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 51',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 51,
@@ -513,7 +563,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 52',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 52,
@@ -523,7 +574,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 53',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [1]
     },
     {
       id: 53,
@@ -533,7 +585,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 54',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 54,
@@ -543,7 +596,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 55',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 55,
@@ -553,7 +607,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 56',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
 
     {
@@ -564,7 +619,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 57',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 57,
@@ -574,7 +630,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 58',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 58,
@@ -584,7 +641,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 59',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [5]
     },
     {
       id: 59,
@@ -594,7 +652,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 60',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
 
     {
@@ -605,7 +664,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 61',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 61,
@@ -615,7 +675,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 62',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 62,
@@ -625,7 +686,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 63',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [1]
     },
     {
       id: 63,
@@ -635,7 +697,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 64',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [2]
     },
     {
       id: 64,
@@ -645,7 +708,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 65',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 65,
@@ -655,7 +719,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 66',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
 
     {
@@ -666,7 +731,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 67',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 67,
@@ -676,7 +742,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 68',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [5]
     },
     {
       id: 68,
@@ -686,7 +753,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 69',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
 
     {
@@ -697,7 +765,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 70',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 70,
@@ -707,7 +776,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 71',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [2]
     },
     {
       id: 71,
@@ -717,7 +787,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 72',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 72,
@@ -727,7 +798,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 73',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
 
     {
@@ -738,7 +810,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 74',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 74,
@@ -748,7 +821,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 75',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: [3]
     },
     {
       id: 75,
@@ -758,7 +832,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 76',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [1]
     },
     {
       id: 76,
@@ -768,7 +843,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 77',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 77,
@@ -778,7 +854,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 78',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
 
     {
@@ -789,7 +866,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 79',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 79,
@@ -799,7 +877,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 80',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 80,
@@ -809,7 +888,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 81',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: [1]
     },
 
     {
@@ -820,7 +900,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 82',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 82,
@@ -830,7 +911,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 83',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
 
     {
@@ -841,7 +923,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 84',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: []
     },
     {
       id: 84,
@@ -851,7 +934,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 85',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-4.webp'
+      photo: './images/apartments-photo-4.webp',
+      available: []
     },
     {
       id: 85,
@@ -861,7 +945,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 86',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-1.webp'
+      photo: './images/apartments-photo-1.webp',
+      available: []
     },
     {
       id: 86,
@@ -871,7 +956,8 @@ const apartmentsList = [
       address: 'Пл. Ленина 87',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-2.webp'
+      photo: './images/apartments-photo-2.webp',
+      available: []
     },
     {
       id: 87,
@@ -881,6 +967,7 @@ const apartmentsList = [
       address: 'Пл. Ленина 88',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
-      photo: './images/apartments-photo-3.webp'
+      photo: './images/apartments-photo-3.webp',
+      available: [3]
     },    
 ]

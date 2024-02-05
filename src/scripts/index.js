@@ -53,18 +53,37 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).next().slideToggle("fast");
    })
 
+
    // Дейтпикер формы поиска на главной
    $( "#main-form-datepicker-in" ).datepicker({
-      numberOfMonths: 2
+      numberOfMonths: 2,
+      minDate: 0,
+			onSelect: function (selected) {
+			var dt = $(this).datepicker("getDate");
+			dt.setDate(dt.getDate() + 1);
+			$("#main-form-datepicker-out").datepicker("option", "minDate", dt);
+			$("#main-form-datepicker-out").datepicker("option", "dateFormat", "dd.mm.yy");			
+			$("#main-form-datepicker-out").datepicker("setDate", dt);
+
+			//Dateformat
+			$("main-form-datepicker-in").datepicker("option", "dateFormat", "dd.mm.yy");
+		}
    });
    $( "#main-form-datepicker-out" ).datepicker({
       numberOfMonths: 2,
+      minDate: 0,
+			onSelect: function (selected) {
+			var dt = $(this).datepicker("getDate");
+			dt.setDate(dt.getDate() - 1);
 
+			//Dateformat
+			$("#main-form-datepicker-out").datepicker("option", "dateFormat", "dd.mm.yy");
+		}
    });
    var date = new Date()
    date.setDate(date.getDate() + parseInt($('#main-form-datepicker-in').val(), 10))
-   $('#main-form-datepicker-out').datepicker('option', {minDate: date})
-   jQuery(function ($) {
+   //$('#main-form-datepicker-out').datepicker('option', {minDate: date})
+   $(function ($) {
       $.datepicker.regional['ru'] = {
           closeText: 'Закрыть',
           prevText: 'Пред',

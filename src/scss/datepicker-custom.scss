@@ -65,8 +65,8 @@
   text-align: end;
 }
 
-.ui-state-highlight, 
-.ui-widget-content .ui-state-highlight {
+.ui-state-default.ui-state-highlight.ui-state-active,
+.ui-state-default.ui-state-active {
   background-color: #064749;
   color: #ffffff;
 }
