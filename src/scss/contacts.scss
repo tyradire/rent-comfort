@@ -1,0 +1,17 @@
+.contacts {
+  margin-top: 143px;
+
+  .form {
+    max-width: 442px;
+    width: 100%;
+    gap: 16px;
+  }
+}
+
+.contacts form textarea {
+  min-height: 96px;
+  max-height: 144px;
+}
+.contacts input[type=radio]:checked + label::before {
+  background-color: #064749;
+}

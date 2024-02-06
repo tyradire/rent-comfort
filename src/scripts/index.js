@@ -53,32 +53,26 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).next().slideToggle("fast");
    })
 
-
    // Дейтпикер формы поиска на главной
    $( "#main-form-datepicker-in" ).datepicker({
       numberOfMonths: 2,
       minDate: 0,
+      showAnim: "drop",
 			onSelect: function (selected) {
 			var dt = $(this).datepicker("getDate");
-			dt.setDate(dt.getDate() + 1);
 			$("#main-form-datepicker-out").datepicker("option", "minDate", dt);
 			$("#main-form-datepicker-out").datepicker("option", "dateFormat", "dd.mm.yy");			
 			$("#main-form-datepicker-out").datepicker("setDate", dt);
 
 			//Dateformat
-			$("main-form-datepicker-in").datepicker("option", "dateFormat", "dd.mm.yy");
+			$("#main-form-datepicker-in").datepicker("option", "dateFormat", "dd.mm.yy");
 		}
    });
    $( "#main-form-datepicker-out" ).datepicker({
       numberOfMonths: 2,
       minDate: 0,
-			onSelect: function (selected) {
-			var dt = $(this).datepicker("getDate");
-			dt.setDate(dt.getDate() - 1);
-
-			//Dateformat
-			$("#main-form-datepicker-out").datepicker("option", "dateFormat", "dd.mm.yy");
-		}
+      showAnim: "drop",
+      range: 'period',
    });
    var date = new Date()
    date.setDate(date.getDate() + parseInt($('#main-form-datepicker-in').val(), 10))
@@ -174,9 +168,25 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem('searchFormData', JSON.stringify(formData));
    })
 
-   // Телефонный инпут страницы заказа
-   let orderPhoneInput = document.querySelector("#order-phone");
-   window.intlTelInput(orderPhoneInput, {
+   // Телефонные инпуты с масками
+   const orderPhoneInput = document.querySelector("#order-phone");
+   const contactsPhoneInput = document.querySelector("#contacts-phone");
+   
+   if (window.location.pathname == '/order.html') {
+      window.intlTelInput(orderPhoneInput, {
+         initialCountry: "auto",
+         geoIpLookup: callback => {
+            fetch("https://ipapi.co/json")
+               .then(res => res.json())
+               .then(data => callback(data.country_code))
+               .catch(() => callback("us"));
+         },
+         utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
+      });
+      $('#order-phone').mask('(999)-999-99-99');
+   }
+   
+   window.intlTelInput(contactsPhoneInput, {
       initialCountry: "auto",
       geoIpLookup: callback => {
          fetch("https://ipapi.co/json")
@@ -186,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
    });
-   $('#order-phone').mask('(999)-999-99-99');
+   $('#contacts-phone').mask('(999)-999-99-99');
 
    // Форма заказа
    $('#another-person-checkbox').on('change', function() {
@@ -216,4 +226,58 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
       }
    })
+
+   function initDatePickerMarkup(e) {
+      $(e)
+          .datepicker('widget').find('td').mouseover(function() {
+              currentDate = new Date($(this).attr('data-year')+"/"+(parseInt($(this).attr('data-month'))+1)+"/"+$(this).text());
+              selectedDate = $(e).datepicker('getDate');
+              if (selectedDate === null) {
+                  selectedDate = new Date();
+              }
+              allTds = $(this).parents('table.ui-datepicker-calendar').find('td');
+              allTds.removeClass('ui-datepicker-mouseover1')
+              found = false;
+              if (currentDate < selectedDate) {
+                  for (i = 0; i < allTds.length; i++) {
+                      if (allTds[i] == this) {
+                          found = true;
+                      }
+                      if ($(allTds[i]).hasClass('ui-datepicker-today') || $(allTds[i]).hasClass('ui-datepicker-current-day')) {
+                          break;
+                      }
+                      if (found) {
+                          $(allTds[i]).addClass('ui-datepicker-mouseover1');
+                      }
+                  }
+              } else if (currentDate > selectedDate) {
+                  for (i = 0; i < allTds.length; i++) {
+                      if (found) {
+                          $(allTds[i]).addClass('ui-datepicker-mouseover1');
+                      }
+                      if ($(allTds[i]).hasClass('ui-datepicker-today') || $(allTds[i]).hasClass('ui-datepicker-current-day')) {
+                          found = true;
+                      }
+                      if (allTds[i] == this) {
+                          break;
+                      }
+                  }
+              }
+          });
+  }
+  $(function() {
+      $.datepicker._updateDatepicker_original = $.datepicker._updateDatepicker;
+      $.datepicker._updateDatepicker = function(inst) {
+          $.datepicker._updateDatepicker_original(inst);
+          var afterShow = this._get(inst, 'afterShow');
+          if (afterShow) {
+              afterShow.apply((inst.input ? inst.input[0] : null));  // trigger custom callback
+          }
+      }
+      $( "#datepicker" ).datepicker({
+          afterShow: function(e) {
+              initDatePickerMarkup(this);
+          }
+      });
+  });
 });
