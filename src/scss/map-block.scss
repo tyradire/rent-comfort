@@ -6,6 +6,7 @@
   width: 100%;
   height: 400px;
   overflow: hidden;
+  background-color: #d5d8d5;
 }
 
 .map-block-baloon-title {
@@ -119,6 +120,14 @@
 [class*="balloon__tail"]:after {
   background-color: #49735A !important;
   bottom: -4px !important;
+}
+
+/* Тени балуна */
+[class*="balloon__layout"] {
+  box-shadow: 0px 20px 20px 5px rgba(129, 171, 146, 0.4) !important;
+}
+[class*="balloon__tail"]::after {
+  box-shadow: -3px 3px 7px 2px rgba(129,171,146,.4)!important;
 }
 
 /* Панель зума */

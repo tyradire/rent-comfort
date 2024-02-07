@@ -12,8 +12,18 @@ function init(){
     customMap.controls.remove('rulerControl'); // удаляем контрол правил
 
     let myGeoObjects = [];
-
+    let editPriceTocorrectFormat = (price) => {
+        return new Intl.NumberFormat('ru-RU', 
+        { 
+            style: 'currency', 
+            currency: 'RUB' 
+        })
+        .format(
+            price,
+        )
+    }
     for (var i = 0; i<apartmentsList.length; i++) {
+        let baloonPrice = editPriceTocorrectFormat(apartmentsList[i].price)
         myGeoObjects[i] = new ymaps.GeoObject({
             geometry: {
             type: "Point",
@@ -39,7 +49,7 @@ function init(){
                 })(),
                 // Зададим содержимое всплывающей подсказки.
                 hintContent: `${apartmentsList[i].address}`,
-                iconCaption: `${apartmentsList[i].address}`
+                iconCaption: `${baloonPrice}`
             }
         });
     }

@@ -73,6 +73,14 @@
   }
 }
 
+@media (max-width: 1399px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+  .footer {
+    gap: 48px;
+  }
+}
 @media (max-width: 767px) {
   .footer {
     flex-direction: column;
@@ -88,12 +96,17 @@
   .footer-soc-list {
     margin: 20px auto 0;
   }
+  .navigate-list {
+    max-width: 240px;
+    width: 100%;
+  }
   .footer .navigate {
     flex-direction: column;
-    margin-top: 48px;
-    margin-left: 24px;
+    margin: 0;
+    align-items: center;
   }
   .footer .form {
+    margin: 0 auto;
     margin-top: 56px;
 
     .form-title {

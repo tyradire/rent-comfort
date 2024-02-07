@@ -9,6 +9,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: [3]
     },
     {
@@ -20,6 +21,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -31,6 +33,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [5]
     },
     {
@@ -42,6 +45,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -53,6 +57,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -64,6 +69,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [2]
     },
     {
@@ -75,6 +81,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -86,6 +93,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -97,6 +105,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: [1]
     },
     {
@@ -108,6 +117,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -119,6 +129,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [8]
     },
     {
@@ -130,6 +141,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [4]
     },
     {
@@ -141,6 +153,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -152,6 +165,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -163,6 +177,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -174,6 +189,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -185,6 +201,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -196,6 +213,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
 
@@ -209,6 +227,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -220,6 +239,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [4]
     },
     {
@@ -231,6 +251,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -242,6 +263,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -253,6 +275,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -264,6 +287,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -275,6 +299,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: [2]
     },
     {
@@ -286,6 +311,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -297,6 +323,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -308,6 +335,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -319,6 +347,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -330,6 +359,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -341,6 +371,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
 
@@ -353,6 +384,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [3]
     },
     {
@@ -364,6 +396,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -375,6 +408,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -386,6 +420,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -397,6 +432,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [9]
     },
     {
@@ -408,6 +444,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
 
@@ -420,6 +457,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -431,6 +469,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [4]
     },
     {
@@ -442,6 +481,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -453,6 +493,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -464,6 +505,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -475,6 +517,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [1]
     },
     {
@@ -486,6 +529,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
 
@@ -498,6 +542,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -509,6 +554,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [8]
     },
     {
@@ -520,6 +566,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -531,6 +578,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [3]
     },
     {
@@ -542,6 +590,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -553,6 +602,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -564,6 +614,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -575,6 +626,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [1]
     },
     {
@@ -586,6 +638,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -597,6 +650,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -608,6 +662,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
 
@@ -620,6 +675,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -631,6 +687,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -642,6 +699,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [5]
     },
     {
@@ -653,6 +711,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
 
@@ -665,6 +724,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -676,6 +736,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -687,6 +748,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [1]
     },
     {
@@ -698,6 +760,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [2]
     },
     {
@@ -709,6 +772,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -720,6 +784,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
 
@@ -732,6 +797,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -743,6 +809,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [5]
     },
     {
@@ -754,6 +821,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
 
@@ -766,6 +834,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -777,6 +846,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [2]
     },
     {
@@ -788,6 +858,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -799,6 +870,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
 
@@ -811,6 +883,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -822,6 +895,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: [3]
     },
     {
@@ -833,6 +907,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [1]
     },
     {
@@ -844,6 +919,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -855,6 +931,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
 
@@ -867,6 +944,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -878,6 +956,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -889,6 +968,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: [1]
     },
 
@@ -901,6 +981,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -912,6 +993,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
 
@@ -924,6 +1006,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: []
     },
     {
@@ -935,6 +1018,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-4.webp',
+      price: 30000,
       available: []
     },
     {
@@ -946,6 +1030,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-1.webp',
+      price: 30000,
       available: []
     },
     {
@@ -957,6 +1042,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-2.webp',
+      price: 30000,
       available: []
     },
     {
@@ -968,6 +1054,7 @@ const apartmentsList = [
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
       photo: './images/apartments-photo-3.webp',
+      price: 30000,
       available: [3]
     },    
 ]
