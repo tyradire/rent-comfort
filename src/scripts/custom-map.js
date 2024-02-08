@@ -31,7 +31,7 @@ function init(){
             },
             properties: {
                 clusterCaption: `${apartmentsList[i].address}`,           
-                balloonContentHeader: `<h4 class="map-block-baloon-title">${apartmentsList[i].address}</h4>`,
+                balloonContentHeader: `<a href="/detail.html" class="map-block-baloon-title">${apartmentsList[i].address}</a>`,
                 balloonContentBody:
                   `
                     <div class="map-block-baloon-content" style="background-image: url('${apartmentsList[i].photo}')">
