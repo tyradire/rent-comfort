@@ -9,11 +9,20 @@
   }
 
   &-title {
+    margin: 0;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
     line-height: 60px;
+  }
+  &-subtitle {
     margin: 0;
+    margin-top: 140px;
+    margin-bottom: 60px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.125;
+    color: #181a18;  
   }
   &-city {
     font-size: 18px;
@@ -35,6 +44,33 @@
       span {
         color: rgba(0, 0, 0, .45);
       }
+    }
+  }
+  &-list.tags-line {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    grid-template-columns: unset;
+    background-color: #FFFFFF;
+
+    li {
+      color: #dc6161;
+      padding: 4px 6px;
+      border: 1px solid #dc6161;
+      border-radius: 15px;
+    }
+  }
+  &-list.tags-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px 48px;
+
+    li {
+      max-width: 280px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   }
 

@@ -1,3 +1,54 @@
+const amenitiesList = {
+  1: {
+    point: 'ТВ',
+    icon: 'images/advantage-tv-icon.svg',
+  },
+  2: {
+    point: 'Камин',
+    icon: 'images/advantage-fireplace-icon.svg',
+  },
+  3: {
+    point: 'Городской телефон',
+    icon: 'images/advantage-phone-icon.svg',
+  },
+  4: {
+    point: 'Рабочее место',
+    icon: 'images/advantage-pc-workplace-icon.svg',
+  },
+  5: {
+    point: 'Холодильник',
+    icon: 'images/advantage-fridge-icon.svg',
+  },
+  6: {
+    point: 'Чайник',
+    icon: 'images/advantage-kettle-icon.svg',
+  },
+  7: {
+    point: 'Кофемашина',
+    icon: 'images/advantage-coffee-icon.svg',
+  },
+  8: {
+    point: 'Стиральная машина',
+    icon: 'images/advantage-washing-machine-icon.svg',
+  },
+  9: {
+    point: 'Сушильная машина',
+    icon: 'images/advantage-dryer-icon.svg',
+  },
+  10: {
+    point: 'Утюг',
+    icon: 'images/advantage-iron-icon.svg',
+  },
+  11: {
+    point: 'Гардероб',
+    icon: 'images/advantage-wardrobe-icon.svg',
+  },
+  12: {
+    point: 'Посуда',
+    icon: 'images/advantage-dishes-icon.svg',
+  }
+}
+
 const apartmentsList = [
   // MSC
     {
@@ -8,7 +59,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 1',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 38000,
       available: [3]
     },
@@ -20,7 +73,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 2',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 43000,
       available: []
     },
@@ -32,7 +87,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 3',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 39000,
       available: [5]
     },
@@ -44,7 +101,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 4',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 47000,
       available: []
     },
@@ -56,7 +115,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 5',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 54000,
       available: []
     },
@@ -68,7 +129,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 6',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 65000,
       available: [2]
     },
@@ -80,7 +143,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 7',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 34000,
       available: []
     },
@@ -92,7 +157,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 8',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 67000,
       available: []
     },
@@ -104,7 +171,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 9',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 38000,
       available: [1]
     },
@@ -116,7 +185,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 10',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 43000,
       available: []
     },
@@ -128,7 +199,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 11',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 57000,
       available: [8]
     },
@@ -140,7 +213,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 12',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 52000,
       available: [4]
     },
@@ -152,7 +227,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 13',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 38000,
       available: []
     },
@@ -164,7 +241,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 14',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 42000,
       available: []
     },
@@ -176,7 +255,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 15',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 40000,
       available: []
     },
@@ -188,7 +269,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 16',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 73000,
       available: []
     },
@@ -200,7 +283,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 17',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 57000,
       available: []
     },
@@ -212,7 +297,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 18',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 38000,
       available: []
     },
@@ -226,7 +313,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 19',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 45000,
       available: []
     },
@@ -238,7 +327,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 20',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 39000,
       available: [4]
     },
@@ -250,7 +341,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 21',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 39000,
       available: []
     },
@@ -262,7 +355,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 22',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 36000,
       available: []
     },
@@ -274,7 +369,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 23',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 34000,
       available: []
     },
@@ -286,7 +383,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 24',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 71000,
       available: []
     },
@@ -298,7 +397,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 25',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 63000,
       available: [2]
     },
@@ -310,7 +411,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 26',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 29000,
       available: []
     },
@@ -322,7 +425,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 27',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 28500,
       available: []
     },
@@ -334,7 +439,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 28',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 61000,
       available: []
     },
@@ -346,7 +453,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 29',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 55000,
       available: []
     },
@@ -358,7 +467,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 31',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 52000,
       available: []
     },
@@ -370,7 +481,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 32',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 24000,
       available: []
     },
@@ -383,7 +496,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 33',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 32000,
       available: [3]
     },
@@ -395,7 +510,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 34',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 29000,
       available: []
     },
@@ -407,7 +524,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 35',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 52000,
       available: []
     },
@@ -419,7 +538,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 36',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 47000,
       available: []
     },
@@ -431,7 +552,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 37',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 32000,
       available: [9]
     },
@@ -443,7 +566,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 38',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: []
     },
@@ -456,7 +581,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 39',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 30000,
       available: []
     },
@@ -468,7 +595,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 40',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 32000,
       available: [4]
     },
@@ -480,7 +609,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 41',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 42000,
       available: []
     },
@@ -492,7 +623,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 42',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 51000,
       available: []
     },
@@ -504,7 +637,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 43',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 38000,
       available: []
     },
@@ -516,7 +651,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 44',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 25000,
       available: [1]
     },
@@ -528,7 +665,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 45',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 26000,
       available: []
     },
@@ -541,7 +680,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 46',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 34000,
       available: []
     },
@@ -553,7 +694,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 47',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 32000,
       available: [8]
     },
@@ -565,7 +708,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 48',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 39000,
       available: []
     },
@@ -577,7 +722,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 49',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 41500,
       available: [3]
     },
@@ -589,7 +736,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 50',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 25000,
       available: []
     },
@@ -601,7 +750,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 51',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 32000,
       available: []
     },
@@ -613,7 +764,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 52',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 22000,
       available: []
     },
@@ -625,7 +778,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 53',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: [1]
     },
@@ -637,7 +792,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 54',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: []
     },
@@ -649,7 +806,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 55',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 28000,
       available: []
     },
@@ -661,7 +820,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 56',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 30000,
       available: []
     },
@@ -674,7 +835,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 57',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 27000,
       available: []
     },
@@ -686,7 +849,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 58',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 30000,
       available: []
     },
@@ -698,7 +863,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 59',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 33000,
       available: [5]
     },
@@ -710,7 +877,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 60',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 34000,
       available: []
     },
@@ -723,7 +892,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 61',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 27000,
       available: []
     },
@@ -735,7 +906,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 62',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 22000,
       available: []
     },
@@ -747,7 +920,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 63',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: [1]
     },
@@ -759,7 +934,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 64',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 31000,
       available: [2]
     },
@@ -771,7 +948,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 65',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 19000,
       available: []
     },
@@ -783,7 +962,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 66',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 18000,
       available: []
     },
@@ -796,7 +977,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 67',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 18000,
       available: []
     },
@@ -808,7 +991,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 68',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: [5]
     },
@@ -820,7 +1005,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 69',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 23000,
       available: []
     },
@@ -833,7 +1020,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 70',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 19000,
       available: []
     },
@@ -845,7 +1034,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 71',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 22000,
       available: [2]
     },
@@ -857,7 +1048,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 72',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: []
     },
@@ -869,7 +1062,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 73',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 20000,
       available: []
     },
@@ -882,7 +1077,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 74',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 33000,
       available: []
     },
@@ -894,7 +1091,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 75',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 30000,
       available: [3]
     },
@@ -906,7 +1105,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 76',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 30000,
       available: [1]
     },
@@ -918,7 +1119,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 77',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 34000,
       available: []
     },
@@ -930,7 +1133,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 78',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 28000,
       available: []
     },
@@ -943,7 +1148,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 79',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 20000,
       available: []
     },
@@ -955,7 +1162,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 80',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 19000,
       available: []
     },
@@ -967,7 +1176,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 81',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 22000,
       available: [1]
     },
@@ -980,7 +1191,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 82',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 22000,
       available: []
     },
@@ -992,7 +1205,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 83',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 23000,
       available: []
     },
@@ -1005,7 +1220,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 84',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 19000,
       available: []
     },
@@ -1017,7 +1234,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 85',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-4.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 18000,
       available: []
     },
@@ -1029,7 +1248,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 86',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-1.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 20000,
       available: []
     },
@@ -1041,7 +1262,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 87',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-2.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 20000,
       available: []
     },
@@ -1053,7 +1276,9 @@ const apartmentsList = [
       address: 'Пл. Ленина 88',
       phone: '+791234567890',
       tags: ['2-комн.', 'wi-fi', 'лифт', '3-эт', 'парковка'],
+      rules: ['не курить', 'без домашних животных', 'без вечеринок'],
       photo: './images/apartments-photo-3.webp',
+      amenities: [1,2,3,4,5,6,7,8,9,10,11,12],
       price: 21000,
       available: [3]
     },    
