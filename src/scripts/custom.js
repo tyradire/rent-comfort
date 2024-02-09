@@ -25,33 +25,7 @@ if ($(document).height() <= $(window).height()) {
   $(document.body).css('padding-right', '17px');
 }
 
-// Псевдомаршрутизация с помощью localstorage
-$('.apartments-list-item').each(function(index) {
-  let currentId;
-  $(this).on(
-    'click',
-    () => {
-      currentId = ($(this).prop('id'))
-      localStorage.setItem('currentApartments', currentId)
-    }
-  )
-})
-
 let searchFormData = JSON.parse(localStorage.getItem('searchFormData'));
-
-if (window.location.pathname == '/detail.html' || isDev) {
-  let currentId = Number(localStorage.getItem('currentApartments'));
-  let currentApartments = apartmentsList.find(apartments => apartments.id === currentId)
-  $('.detail-booking-title').text('Апартаменты на ' + currentApartments.address)
-  $('.detail-booking-city').text(currentApartments.city)
-}
-
-if (window.location.pathname == '/arenda.html' || isDev) {
-  $('#main-form-search-input').val(searchFormData.city);
-  $('#main-form-datepicker-in').val(searchFormData.dateIn);
-  $('#main-form-datepicker-out').val(searchFormData.dateOut);
-  $('#main-search-form-counter').val(searchFormData.guests);
-}
 
 // Отображение списка апартаментов
 let apartmentsArenda = $('#apartments-list-arenda');
@@ -76,7 +50,7 @@ let addItemsToList = (selectedCity) => {
           <li class="apartments-list-item-tag">парковка</li>
         </ul>
         <p class="apartments-list-item-status">Доступно <span class="apartments-list-item-status-date">без ограничений</span></p>
-        <p class="apartments-list-item-price">от <span class="apartments-list-item-price-sum">30.000</span> &#8381;/мес</p>
+        <p class="apartments-list-item-price">от <span class="apartments-list-item-price-sum">${apartments.price}</span> &#8381;/мес</p>
       </div>
       </li>
       ` 
@@ -86,8 +60,35 @@ let addItemsToList = (selectedCity) => {
 
 addItemsToList(filtredApartmentsList);
 
+// Псевдомаршрутизация с помощью localstorage
+$('.apartments-list-item').each(function(index) {
+  let currentId;
+  $(this).on(
+    'click',
+    () => {
+      currentId = ($(this).prop('id'))
+      localStorage.setItem('currentApartments', currentId)
+    }
+  )
+})
+
 $('#main-form-search-input').on('change', function() {
   $('#apartments-list-arenda').children().remove();
   filtredApartmentsList = apartmentsList.filter(city => city.cityCode ==  $('#main-form-search-input').val());
   addItemsToList(filtredApartmentsList);
 })
+
+if (window.location.pathname == '/detail.html' || isDev) {
+  let currentId = Number(localStorage.getItem('currentApartments'));
+  let currentApartments = apartmentsList.find(apartments => apartments.id === currentId)
+  $('.detail-booking-title').text('Апартаменты на ' + currentApartments.address)
+  $('.detail-booking-city').text(currentApartments.city)
+  $("#detail-booking-price").text(currentApartments.price)
+}
+
+if (window.location.pathname == '/arenda.html' || isDev) {
+  $('#main-form-search-input').val(searchFormData.city);
+  $('#main-form-datepicker-in').val(searchFormData.dateIn);
+  $('#main-form-datepicker-out').val(searchFormData.dateOut);
+  $('#main-search-form-counter').val(searchFormData.guests);
+}
