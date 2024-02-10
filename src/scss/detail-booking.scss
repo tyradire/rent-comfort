@@ -124,3 +124,126 @@
     align-self: center;
   }
 }
+
+@media (max-width: 1279px) {
+  .detail-booking {
+    flex-direction: column-reverse;
+    gap: 60px;
+    margin-top: 32px;
+  }
+  .detail-booking-title {
+
+  }
+  .detail-booking .detail-booking-wrapper form.detail-booking-order {
+    flex-direction: row;
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .detail-booking .form-select-date {
+    width: 108px;
+    background-image: unset;
+    background-color: transparent;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 6px 0;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+  .detail-booking .form-split {
+    gap: 0;
+    margin-left: 64px;
+  }
+  .detail-booking .form-column label,
+  .detail-booking .form-split:last-of-type {
+    display: none;
+  }
+  .detail-booking .form-split:last-of-type,
+  .detail-booking .form h3 {
+    margin: 0;
+    color: #FFFFFF;
+  }
+  .detail-booking .form h3 {
+    height: 36px;
+  }
+  .detail-booking-order {
+    background-color: #49735A;
+  }
+  .detail-booking .button {
+    margin-left: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .detail-booking-order {
+    padding: 24px;
+    border-radius: 10px
+  }
+}
+
+@media (max-width: 1023px) {
+  .detail-booking .form h3 {
+    margin-top: 8px;
+  }
+}
+
+@media (max-width: 992px) {
+  .detail-booking {
+    gap: 36px;
+  }
+  .detail-booking-title {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .detail-booking-subtitle {
+    margin-top: 64px;
+    margin-bottom: 24px;
+  }
+  .detail-booking-list.tags-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .detail-booking .form h3 {
+    min-width: fit-content;
+  }
+  .detail-booking .form-split {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .detail-booking {
+    margin-top: 0;
+  }
+  .detail-booking .detail-booking-wrapper form.detail-booking-order {
+    padding-left: 24px;
+    padding-right: 24px;
+    position: relative;
+    left: -24px;
+    border-radius: 0;
+    flex-wrap: wrap;
+    width: calc(100vw - 17px);
+  }
+  .detail-booking .form h3 {
+    width: 100%;
+    margin-left: 16px;
+    text-align: start;
+  }
+  .detail-booking .form-split {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .detail-booking .detail-booking-wrapper form.detail-booking-order {
+    left: -16px;
+  }
+  .detail-booking-list.tags-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-booking-list.tags-grid li {
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .detail-booking-list.tags-line {
+    gap: 16px;
+  }
+}
