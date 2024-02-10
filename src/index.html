@@ -3,10 +3,13 @@
 <div class="container">
     @@include('parts/header.html')
 </div>
-@@include('parts/detail-gallery.html')
 <div class="container">
-    @@include('parts/detail-booking.html')
-    @@include('parts/detail-booking-additional.html')
+    <div class="form-wrapper">
+        @@include('parts/horizontal-form.html')
+    </div>
+    @@include('parts/map-block.html')
+    @@include('parts/apartments-list.html')
+    @@include('parts/faq.html')
 </div>
 <div class="container">
     @@include('parts/footer.html')

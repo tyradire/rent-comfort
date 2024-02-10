@@ -39,9 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     for (var i = 0; i < currentApartments.rules.length; i++) {
       $("#detail-booking-rules").append('<li class="detail-booking-list-point">' + currentApartments.rules[i] + '</li>');
     }
-    console.log(currentApartments.amenities.length)
     for (var i = 1; i <= currentApartments.amenities.length; i++) {
-      console.log(amenitiesList[i].point, i)
       $("#detail-booking-amenities").append(
         '<li class="detail-booking-list-point">' + 
         amenitiesList[i].point +

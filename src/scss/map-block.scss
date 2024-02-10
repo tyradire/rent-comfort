@@ -23,8 +23,8 @@
 }
 .map-block-baloon-content {
   display: flex;
-  width: 400px;
-  height: 262px;
+  width: 320px;
+  height: 180px;
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
@@ -169,4 +169,13 @@
 }
 [class*="controls__control"] {
   inset: 20px 10px auto auto !important;
+}
+
+/* Фиксы блока балуна */
+[class*="balloon__content"] ymaps[id] {
+  overflow: hidden;
+  overflow-y: hidden !important;
+}
+[class*="balloon_layout_panel"] {
+  max-width: 320px;
 }

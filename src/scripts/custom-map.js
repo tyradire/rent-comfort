@@ -23,6 +23,7 @@ function init(){
         )
     }
     for (var i = 0; i<apartmentsList.length; i++) {
+
         let baloonPrice = editPriceTocorrectFormat(apartmentsList[i].price)
         myGeoObjects[i] = new ymaps.GeoObject({
             geometry: {
@@ -31,7 +32,7 @@ function init(){
             },
             properties: {
                 clusterCaption: `${apartmentsList[i].address}`,           
-                balloonContentHeader: `<a href="/detail.html" class="map-block-baloon-title">${apartmentsList[i].address}</a>`,
+                balloonContentHeader: `<a href="/detail.html" class="map-block-baloon-title" id="baloon-${apartmentsList[i].id}">${apartmentsList[i].address}</a>`,
                 balloonContentBody:
                   `
                     <div class="map-block-baloon-content" style="background-image: url('${apartmentsList[i].photo}')">
