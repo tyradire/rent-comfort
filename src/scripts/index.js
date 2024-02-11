@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
    })
 
    let months;
-   if ($(window).width() > 768) {
+   if ($(window).width() > 767) {
       months = 2
    } else {
       months = 1
