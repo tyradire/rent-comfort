@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let searchFormData = JSON.parse(localStorage.getItem('searchFormData'));
 
+  // Настройки для детальной страницы
   if (window.location.pathname == '/detail.html' || isDev) {
     let currentId = Number(localStorage.getItem('currentApartments'));
     let currentApartments = apartmentsList.find(apartments => apartments.id === currentId)
@@ -48,6 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Настройки для страницы аренды
   if (window.location.pathname == ('/arenda.html' || isDev) && searchFormData) {
     $('#main-form-search-input').val(searchFormData.city);
     $('#main-form-datepicker-in').val(searchFormData.dateIn);

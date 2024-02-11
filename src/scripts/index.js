@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
    $('.reviews-list').slick({
       infinite: true,
       centerMode: true,
@@ -53,9 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).next().slideToggle("fast");
    })
 
+   let months;
+   if ($(window).width() > 768) {
+      months = 2
+   } else {
+      months = 1
+   }
+
    // Дейтпикер формы поиска на главной
    $( "#main-form-datepicker-in" ).datepicker({
-      numberOfMonths: 2,
+      numberOfMonths: months,
       minDate: 0,
       showAnim: "drop",
 			onSelect: function (selected) {
@@ -69,7 +77,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
    });
    $( "#main-form-datepicker-out" ).datepicker({
-      numberOfMonths: 2,
+      numberOfMonths: months,
       minDate: 0,
       showAnim: "drop",
       range: 'period',
@@ -102,17 +110,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
    // Дейтпикер формы детальной страницы
    $( "#detail-form-datepicker-in" ).datepicker({
-      numberOfMonths: 2
+      numberOfMonths: months,
+      minDate: 0,
+      showAnim: "drop",
+			onSelect: function (selected) {
+			var dt = $(this).datepicker("getDate");
+			$("#detail-form-datepicker-out").datepicker("option", "minDate", dt);
+			$("#detail-form-datepicker-out").datepicker("option", "dateFormat", "dd.mm.yy");			
+			$("#detail-form-datepicker-out").datepicker("setDate", dt);
+
+			//Dateformat
+			$("#detail-form-datepicker-in").datepicker("option", "dateFormat", "dd.mm.yy");
+		}
    });
    $( "#detail-form-datepicker-out" ).datepicker({
-      numberOfMonths: 2
+      numberOfMonths: months,
+      minDate: 0,
+      showAnim: "drop",
+      range: 'period',
    });
-   $( "#order-form-datepicker-in" ).datepicker({
-      numberOfMonths: 2
-   });
-   $( "#order-form-datepicker-out" ).datepicker({
-      numberOfMonths: 2
-   });
+   date.setDate(date.getDate() + parseInt($('#detail-form-datepicker-in').val(), 10))
 
    // Селект с поиском у формы поиска на главной
    $("#main-form-search-input").select2({
