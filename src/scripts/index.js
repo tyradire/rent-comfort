@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+   let isDev = window.location.hostname == 'localhost';
+
    $('.reviews-list').slick({
       infinite: true,
       centerMode: true,
@@ -189,7 +191,7 @@ document.addEventListener("DOMContentLoaded", () => {
    const orderPhoneInput = document.querySelector("#order-phone");
    const contactsPhoneInput = document.querySelector("#contacts-phone");
    
-   if (window.location.pathname == '/order.html') {
+   if (window.location.pathname == '/order.html' || isDev) {
       window.intlTelInput(orderPhoneInput, {
          initialCountry: "auto",
          geoIpLookup: callback => {
@@ -203,18 +205,20 @@ document.addEventListener("DOMContentLoaded", () => {
       $('#order-phone').mask('(999)-999-99-99');
    }
    
-   window.intlTelInput(contactsPhoneInput, {
-      initialCountry: "auto",
-      geoIpLookup: callback => {
-         fetch("https://ipapi.co/json")
-            .then(res => res.json())
-            .then(data => callback(data.country_code))
-            .catch(() => callback("us"));
-      },
-      utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
-   });
-   $('#contacts-phone').mask('(999)-999-99-99');
-
+   if (window.location.pathname == '/kontakti.html' || isDev) {
+      window.intlTelInput(contactsPhoneInput, {
+         initialCountry: "auto",
+         geoIpLookup: callback => {
+            fetch("https://ipapi.co/json")
+               .then(res => res.json())
+               .then(data => callback(data.country_code))
+               .catch(() => callback("us"));
+         },
+         utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
+      });
+      $('#contacts-phone').mask('(999)-999-99-99');
+   }
+   
    // Форма заказа
    $('#another-person-checkbox').on('change', function() {
       if ($(this).is(':checked')) {
@@ -222,7 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
       } else $('.order-another-person').css('display', 'none')
    })
 
-   $('.order-radio-buttons div input').on('change', function() {
+   $('.order-radio-buttons input:radio').on('change', function() {
       let purpose = $(this).val();
       switch(purpose) {
          case 'business':

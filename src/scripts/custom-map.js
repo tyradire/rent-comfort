@@ -81,9 +81,9 @@ function init(){
 function bookingDetailMapInit() {
     let currentId = Number(localStorage.getItem('currentApartments'));
     let currentApartments = apartmentsList.filter(item => item.id === currentId)
-
+    let currentCoords = currentApartments.length ? currentApartments[0].coords : [56.180,55.492];
     let customMap = new ymaps.Map("detail-booking-custom-map", {
-        center: currentApartments[0].coords,
+        center: currentCoords,
         zoom: 18
     });
 

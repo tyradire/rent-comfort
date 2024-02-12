@@ -147,3 +147,52 @@ form.form-order input[type="tel"] {
   background-size: 24px 24px;
   background-position: center;
 }
+
+@media (max-width: 1279px) {
+  .order {
+    justify-content: space-around;
+  }
+  .order-information {
+    max-width: 430px;
+  }
+  .form.form-order {
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 991px) {
+  .order {
+    margin-top: 82px;
+    flex-direction: column-reverse;
+  }
+  .order-information,
+  .form.form-order {
+    max-width: 100%;
+  }
+  .form.form-order {
+    margin-top: 36px;
+  }
+  .order-information-image {
+    height: 400px;
+  }
+  .order-information {
+    transform: translateX(-48px);
+    width: 100vw;
+    max-width: calc(100vw - 17px);
+  }
+  .form.order-form .form-split {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .order-information {
+    transform: translateX(-24px);
+  }
+}
+
+@media (max-width: 500px) {
+  .order-information {
+    transform: translateX(-16px);
+  }
+}
