@@ -127,6 +127,58 @@
     display: flex;
     flex-direction: column;
   }
+  &-accent {
+    width: 100%;
+    background-color:#e4e3e4;
+    border-radius: 8px; 
+    margin-top: 24px;
+    padding: 20px;
+
+    &-phone {
+      font-size: 22px;
+      font-style: normal;
+      line-height: 1.21;
+      font-weight: 500;
+      color: #064749;
+      text-decoration: none;
+
+      &:hover {
+        opacity: .8;
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: normal;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      margin-top: 4px;
+      flex-wrap: wrap;
+
+      a {
+        color: #064749;
+        margin-left: 2px;
+
+        &:hover {
+          color: #23ad93;
+        }
+      }
+
+      img {
+        margin-right: 4px;
+      }
+    }
+    p:last-of-type {
+      img {
+        margin-top: 2px;
+        filter: contrast(0.53);
+      }
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+  }
 
   &-select-city {
     font-size: 18px;

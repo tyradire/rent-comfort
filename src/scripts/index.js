@@ -188,10 +188,9 @@ document.addEventListener("DOMContentLoaded", () => {
    })
 
    // Телефонные инпуты с масками
-   const orderPhoneInput = document.querySelector("#order-phone");
-   const contactsPhoneInput = document.querySelector("#contacts-phone");
-   
    if (window.location.pathname == '/order.html' || isDev) {
+      const orderPhoneInput = document.querySelector("#order-phone");
+
       window.intlTelInput(orderPhoneInput, {
          initialCountry: "auto",
          geoIpLookup: callback => {
@@ -204,8 +203,10 @@ document.addEventListener("DOMContentLoaded", () => {
       });
       $('#order-phone').mask('(999)-999-99-99');
    }
-   
+
    if (window.location.pathname == '/kontakti.html' || isDev) {
+      const contactsPhoneInput = document.querySelector("#contacts-phone");
+
       window.intlTelInput(contactsPhoneInput, {
          initialCountry: "auto",
          geoIpLookup: callback => {

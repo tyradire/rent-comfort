@@ -85,9 +85,12 @@
   &-information {
     max-width: 522px;
     width: 100%;
+    height: 100%;
     border-radius: 30px;
     overflow: hidden;
     background-color: #F2F0F2;
+    display: flex;
+    flex-direction: column;
 
     &-image {
       width: 100%;
@@ -124,6 +127,11 @@
         }
       }
   }
+}
+
+.order-information .form.order-form .button {
+  margin: 0 auto;
+  margin-top: 24px;
 }
 
 form.form-order input[type="tel"] {
@@ -194,5 +202,10 @@ form.form-order input[type="tel"] {
 @media (max-width: 500px) {
   .order-information {
     transform: translateX(-16px);
+  }
+  .order-information .form-select-date {
+    width: 150px;
+    padding: 12px;
+    background-position: left 4px center;
   }
 }
