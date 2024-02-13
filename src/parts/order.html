@@ -61,9 +61,22 @@
       <div class="form-accent">
         <a href="tel:+71234567890" class="form-accent-phone">+7 123 456-78-90</a>
         <p><img src="../images/phone-icon.svg" width="14" height="14">Номер только для звонков</p>
-        <p><img src="../images/how-it-works-icon-1.svg" width="14" height="14">Если захотите оставить жалобу,<a href="#"> напишите нам</a></p>
+        <p><img src="../images/how-it-works-icon-1.svg" width="14" height="14">Если захотите оставить жалобу,<a href="mailto:support@123support123.ez"> напишите нам</a></p>
       </div>
-      <input class="button" type="button" value="Написать">
+      <input class="button" type="button" value="Написать" id="order-landlord-feedback-button">
+    </form>
+  </div>
+  <div class="cover">
+    <div class="cover-modal"></div>
+    <form class="form modal" id="order-modal-feedback">
+      <input class="input-close" type="button">
+      <h3>Написать владельцу</h3>
+      <div class="form-column">
+        <input class="input" type="text" placeholder="Имя">
+        <input class="input" type="email" placeholder="Эл. почта">
+        <textarea class="input modal-textarea" placeholder="Сообщение"></textarea>
+      </div>
+      <input class="button" type="submit">
     </form>
   </div>
 </section>
