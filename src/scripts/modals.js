@@ -11,7 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     $("body").css({
       "overflow": "hidden",
-      "margin-right": "17px"
+      "margin-right": "17px",
+      "touch-action": "none"
     });
   });
   $(".order .form.modal .input-close").on("click", function() {
@@ -26,7 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     $("body").css({
       "overflow": "unset",
-      "margin-right": "0"
+      "margin-right": "0",
+      "touch-action": "unset"
     });
   });
 });
