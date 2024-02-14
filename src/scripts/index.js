@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-   let isDev = window.location.hostname == 'localhost';
+   //let isDev = window.location.hostname == 'localhost';
+   let isDev = false;
 
    $('.reviews-list').slick({
       infinite: true,
@@ -199,7 +200,7 @@ document.addEventListener("DOMContentLoaded", () => {
                .then(data => callback(data.country_code))
                .catch(() => callback("us"));
          },
-         utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
+         //utilsScript: "/intl-tel-input/js/utils.js?1701962297307" // just for formatting/placeholders etc
       });
       $('#order-phone').mask('(999)-999-99-99');
    }
@@ -302,4 +303,15 @@ document.addEventListener("DOMContentLoaded", () => {
           }
       });
   });
+
+  let citiesListArray = Object.keys(citiesList);
+  console.log(citiesListArray)
+  citiesListArray.forEach(city => {
+   $("#main-location-list").append('<li class="location-list-item">' + 
+   '<a href="#">' +
+   `<p class="location-list-item-name">${citiesList[city].name}</p>` +
+   `<img class="location-list-item-image" src=${citiesList[city].photoDesktop}>` +
+   '</a>' + 
+   '</li>');
+  })
 });

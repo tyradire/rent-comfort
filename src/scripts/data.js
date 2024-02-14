@@ -49,6 +49,94 @@ const amenitiesList = {
   }
 }
 
+const citiesList = {
+  MSC: {
+    name: 'Москва',
+    photoDesktop: 'images/city-msc-mobile.webp',
+    photoMobile: 'images/city-msc-mobile.webp'
+  },
+  SPB: {
+    name: 'Санкт-Петербург',
+    photoDesktop: 'images/city-spb-mobile.webp',
+    photoMobile: 'images/city-spb-mobile.webp'
+  },
+  NSK: {
+    name: 'Новосибирск',
+    photoDesktop: 'images/city-nsk-desktop.webp',
+    photoMobile: 'images/city-nsk-mobile.webp'
+  },
+  EKB: {
+    name: 'Екатеринбург',
+    photoDesktop: 'images/city-ekb-desktop.webp',
+    photoMobile: 'images/city-ekb-mobile.webp'
+  },
+  KAZ: {
+    name: 'Казань',
+    photoDesktop: 'images/city-kaz-desktop.webp',
+    photoMobile: 'images/city-kaz-mobile.webp'
+  },
+  NNG: {
+    name: 'Нижний Новгород',
+    photoDesktop: 'images/city-nng-desktop.webp',
+    photoMobile: 'images/city-nng-mobile.webp'
+  },
+  CHL: {
+    name: 'Челябинск',
+    photoDesktop: 'images/city-chl-desktop.webp',
+    photoMobile: 'images/city-chl-mobile.webp'
+  },
+  SAM: {
+    name: 'Самара',
+    photoDesktop: 'images/city-sam-desktop.webp',
+    photoMobile: 'images/city-sam-mobile.webp'
+  },
+  UFA: {
+    name: 'Уфа',
+    photoDesktop: 'images/city-ufa-desktop.webp',
+    photoMobile: 'images/city-ufa-mobile.webp'
+  },
+  RND: {
+    name: 'Ростов-на-Дону',
+    photoDesktop: 'images/city-rnd-desktop.webp',
+    photoMobile: 'images/city-rnd-mobile.webp'
+  },
+  OMS: {
+    name: 'Омск',
+    photoDesktop: 'images/city-oms-desktop.webp',
+    photoMobile: 'images/city-oms-mobile.webp'
+  },
+  KRK: {
+    name: 'Красноярск',
+    photoDesktop: 'images/city-krk-desktop.webp',
+    photoMobile: 'images/city-krk-mobile.webp'
+  },
+  VRN: {
+    name: 'Воронеж',
+    photoDesktop: 'images/city-vrn-desktop.webp',
+    photoMobile: 'images/city-vrn-mobile.webp'
+  },
+  PER: {
+    name: 'Пермь',
+    photoDesktop: 'images/city-per-desktop.webp',
+    photoMobile: 'images/city-per-mobile.webp'
+  },
+  VGD: {
+    name: 'Волгоград',
+    photoDesktop: 'images/city-vgd-desktop.webp',
+    photoMobile: 'images/city-vgd-mobile.webp'
+  },
+  KRD: {
+    name: 'Краснодар',
+    photoDesktop: 'images/city-krd-desktop.webp',
+    photoMobile: 'images/city-krd-mobile.webp'
+  },
+  TUM: {
+    name: 'Тюмень',
+    photoDesktop: 'images/city-tum-desktop.webp',
+    photoMobile: 'images/city-tum-mobile.webp'
+  }
+}
+
 const apartmentsList = [
   // MSC
     {

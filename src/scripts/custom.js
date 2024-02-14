@@ -48,17 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
+  // Отображение списка апартаментов
+  let apartmentsArenda = $('#apartments-list-arenda');
+  let apartmentsData = apartmentsList.map(elem => elem.address);
+  let filtredApartmentsList = apartmentsList.filter(city => city.cityCode ==  searchFormData.city);
+
   // Настройки для страницы аренды
-  if (window.location.pathname == ('/arenda.html' || isDev) && searchFormData) {
+  if (window.location.pathname == ('/arenda.html' || '/' || isDev) && searchFormData) {
     $('#main-form-search-input').val(searchFormData.city);
     $('#main-form-datepicker-in').val(searchFormData.dateIn);
     $('#main-form-datepicker-out').val(searchFormData.dateOut);
     $('#main-search-form-counter').val(searchFormData.guests);
-
-    // Отображение списка апартаментов
-    let apartmentsArenda = $('#apartments-list-arenda');
-    let apartmentsData = apartmentsList.map(elem => elem.address);
-    let filtredApartmentsList = apartmentsList.filter(city => city.cityCode ==  searchFormData.city);
 
     let addItemsToList = (selectedCity) => {
       $.each(selectedCity, function( index, apartments ) {
@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     )
   })
-
   $('#main-form-search-input').on('change', function() {
     $('#apartments-list-arenda').children().remove();
     filtredApartmentsList = apartmentsList.filter(city => city.cityCode ==  $('#main-form-search-input').val());
