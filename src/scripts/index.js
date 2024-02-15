@@ -305,8 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   let citiesListArray = Object.keys(citiesList);
-  console.log(citiesListArray)
-  citiesListArray.forEach(city => {
+  citiesListArray.forEach((city, index) => {
    $("#main-location-list").append('<li class="location-list-item">' + 
    '<a href="#">' +
    `<p class="location-list-item-name">${citiesList[city].name}</p>` +
@@ -314,4 +313,16 @@ document.addEventListener("DOMContentLoaded", () => {
    '</a>' + 
    '</li>');
   })
+
+  $("#location-list-toggle-button").on("click", function() {
+   if ($(this).data("hidden")) {
+      $(".location-list-item:nth-child(n+11)").css("display", "list-item");
+      $(this).text('Скрыть');
+      $(this).data("hidden", false);
+   } else {
+      $(".location-list-item:nth-child(n+11)").css("display", "none");
+      $(this).text('Все места');
+      $(this).data("hidden", true);
+   }
+  });
 });
