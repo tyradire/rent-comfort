@@ -307,9 +307,9 @@ document.addEventListener("DOMContentLoaded", () => {
   let citiesListArray = Object.keys(citiesList);
   citiesListArray.forEach((city, index) => {
    $("#main-location-list").append('<li class="location-list-item">' + 
-   '<a href="#">' +
+   '<a href="/arenda.html">' +
    `<p class="location-list-item-name">${citiesList[city].name}</p>` +
-   `<img class="location-list-item-image" src=${citiesList[city].photoDesktop}>` +
+   `<img class="location-list-item-image" src=${citiesList[city].photoDesktop} loading="lazy">` +
    '</a>' + 
    '</li>');
   })
@@ -325,4 +325,16 @@ document.addEventListener("DOMContentLoaded", () => {
       $(this).data("hidden", true);
    }
   });
+
+  $("#hero-list-toggle-button").on("click", function() {
+   if ($(this).data("hidden")) {
+      $(".blog-list:first-of-type .blog-list-item:nth-child(n+7)").css("display", "list-item");
+      $(this).text('Скрыть');
+      $(this).data("hidden", false);
+   } else {
+      $(".blog-list:first-of-type .blog-list-item:nth-child(n+7)").css("display", "none");
+      $(this).text('Читать ещё');
+      $(this).data("hidden", true);
+   }
+  })
 });
