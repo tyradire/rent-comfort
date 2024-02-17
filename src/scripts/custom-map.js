@@ -104,6 +104,31 @@ function bookingDetailMapInit() {
     customMap.geoObjects.add(placemark);
 }
 
+function initMapFromLink() {
+    let currentId = Number(localStorage.getItem('currentApartments'));
+    let currentApartments = apartmentsList.filter(item => item.id === currentId)
+    let currentCoords = currentApartments.length ? currentApartments[0].coords : [56.180,55.492];
+    let customMap = new ymaps.Map("detail-booking-custom-map", {
+        center: currentCoords,
+        zoom: 18
+    });
+
+    let placemark = new ymaps.Placemark(currentApartments[0].coords, {}, {
+		iconLayout: 'default#image',
+		iconImageHref: 'images/apartments-icon.webp',
+		iconImageSize: [42, 42],
+		iconImageOffset: [-42, -21]
+	});
+
+    customMap.controls.remove('geolocationControl'); // удаляем геолокацию
+    customMap.controls.remove('searchControl'); // удаляем поиск
+    customMap.controls.remove('trafficControl'); // удаляем контроль трафика
+    customMap.controls.remove('typeSelector'); // удаляем тип
+    customMap.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+    customMap.controls.remove('rulerControl'); // удаляем контрол правил
+
+    customMap.geoObjects.add(placemark);
+}
 
 ymaps.ready(init);
 ymaps.ready(bookingDetailMapInit);

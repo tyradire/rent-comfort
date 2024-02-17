@@ -52,86 +52,103 @@ const amenitiesList = {
 const citiesList = {
   MSC: {
     name: 'Москва',
+    locationCoords: [55.7535,37.6209],
     photoDesktop: 'images/city-msc-mobile.webp',
     photoMobile: 'images/city-msc-mobile.webp'
   },
   SPB: {
     name: 'Санкт-Петербург',
+    locationCoords: [59.9406,30.0925],
     photoDesktop: 'images/city-spb-mobile.webp',
     photoMobile: 'images/city-spb-mobile.webp'
   },
   NSK: {
     name: 'Новосибирск',
+    locationCoords: [55.0020,82.9560],
     photoDesktop: 'images/city-nsk-desktop.webp',
     photoMobile: 'images/city-nsk-mobile.webp'
   },
   EKB: {
     name: 'Екатеринбург',
+    locationCoords: [56.7887,60.4750],
     photoDesktop: 'images/city-ekb-desktop.webp',
     photoMobile: 'images/city-ekb-mobile.webp'
   },
   KAZ: {
     name: 'Казань',
+    locationCoords: [55.7673,49.0999],
     photoDesktop: 'images/city-kaz-desktop.webp',
     photoMobile: 'images/city-kaz-mobile.webp'
   },
   NNG: {
     name: 'Нижний Новгород',
+    locationCoords: [56.3046,43.8335],
     photoDesktop: 'images/city-nng-desktop.webp',
     photoMobile: 'images/city-nng-mobile.webp'
   },
   CHL: {
     name: 'Челябинск',
+    locationCoords: [55.1539,61.3678],
     photoDesktop: 'images/city-chl-desktop.webp',
     photoMobile: 'images/city-chl-mobile.webp'
   },
   SAM: {
     name: 'Самара',
+    locationCoords: [53.3221,50.0613],
     photoDesktop: 'images/city-sam-desktop.webp',
     photoMobile: 'images/city-sam-mobile.webp'
   },
   UFA: {
     name: 'Уфа',
+    locationCoords: [54.7310,56.0379],
     photoDesktop: 'images/city-ufa-desktop.webp',
     photoMobile: 'images/city-ufa-mobile.webp'
   },
   RND: {
     name: 'Ростов-на-Дону',
+    locationCoords: [47.2543,39.6281],
     photoDesktop: 'images/city-rnd-desktop.webp',
     photoMobile: 'images/city-rnd-mobile.webp'
   },
   OMS: {
     name: 'Омск',
+    locationCoords: [55.1227,73.3789],
     photoDesktop: 'images/city-oms-desktop.webp',
     photoMobile: 'images/city-oms-mobile.webp'
   },
   KRK: {
     name: 'Красноярск',
+    locationCoords: [56.0230,92.8741],
     photoDesktop: 'images/city-krk-desktop.webp',
     photoMobile: 'images/city-krk-mobile.webp'
   },
   VRN: {
     name: 'Воронеж',
+    locationCoords: [51.6943,39.3425],
     photoDesktop: 'images/city-vrn-desktop.webp',
     photoMobile: 'images/city-vrn-mobile.webp'
   },
   PER: {
     name: 'Пермь',
+    locationCoords: [58.0228,56.2294],
     photoDesktop: 'images/city-per-desktop.webp',
     photoMobile: 'images/city-per-mobile.webp'
   },
   VGD: {
     name: 'Волгоград',
+    locationCoords: [48.6486,44.3981],
     photoDesktop: 'images/city-vgd-desktop.webp',
     photoMobile: 'images/city-vgd-mobile.webp'
   },
   KRD: {
     name: 'Краснодар',
+    locationCoords: [45.0661,38.9856],
     photoDesktop: 'images/city-krd-desktop.webp',
     photoMobile: 'images/city-krd-mobile.webp'
   },
   TUM: {
     name: 'Тюмень',
+    locationCoords: [57.1374,65.5459],
     photoDesktop: 'images/city-tum-desktop.webp',
     photoMobile: 'images/city-tum-mobile.webp'
   }

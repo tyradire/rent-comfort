@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
    // Поиск с главной
    $('#main-search-form').on('submit', function(event) {
       event.preventDefault();
+      localStorage.removeItem('currentCity');
       window.location.pathname = '/arenda.html';
       let formData = {
          city: $('#main-form-search-input').val(),
@@ -306,6 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   let citiesListArray = Object.keys(citiesList);
   citiesListArray.forEach((city, index) => {
+
    $("#main-location-list").append('<li class="location-list-item">' + 
    '<a href="/arenda.html">' +
    `<p class="location-list-item-name">${citiesList[city].name}</p>` +
