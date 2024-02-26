@@ -311,7 +311,7 @@ document.addEventListener("DOMContentLoaded", () => {
    $("#main-location-list").append('<li class="location-list-item">' + 
    '<a href="/arenda.html">' +
    `<p class="location-list-item-name">${citiesList[city].name}</p>` +
-   `<img class="location-list-item-image" src=${citiesList[city].photoDesktop} loading="lazy">` +
+   `<img class="location-list-item-image" src=${citiesList[city].photoDesktop} loading="lazy" alt=${citiesList[city].name}>` +
    '</a>' + 
    '</li>');
   })

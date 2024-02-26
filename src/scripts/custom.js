@@ -116,7 +116,5 @@ document.addEventListener("DOMContentLoaded", () => {
   })
   $('#main-form-search-input').on('change', function() {
     $('#apartments-list-arenda').children().remove();
-    filtredApartmentsList = apartmentsList.filter(city => city.cityCode ==  $('#main-form-search-input').val());
-    addItemsToList(filtredApartmentsList);
   })
 });
