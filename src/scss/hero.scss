@@ -85,6 +85,7 @@
 }
 @media (max-width: 500px) {
   .hero {
-    background-position: -480px 240px;
+    background-image: url("../images/hero-background-mobile.webp");
+    background-position-y: 128px;
   }
 }
